@@ -1,1 +1,1 @@
-{"version":3,"names":[],"mappings":"","sources":["main.scss"],"sourcesContent":[""],"file":"main.css","sourceRoot":"/source/"}
+{"version":3,"file":"main.css","sources":["main.scss"],"sourcesContent":[".body {\n  width: 1100px;\n  position: relative;\n}\n\n\n.icon {\n  font-size: 30px;\n}\n\n.search {\n  position: absolute;\n}\n\n.register {\n}\n\n\nnav {\n}\n"],"mappings":"AAAA,KAAK,CAAC;EACJ,KAAK,EAAE,MAAO;EACd,QAAQ,EAAE,QAAS,GACpB;;AAGD,KAAK,CAAC;EACJ,SAAS,EAAE,IAAK,GACjB;;AAED,OAAO,CAAC;EACN,QAAQ,EAAE,QAAS,GACpB","names":[],"sourceRoot":"/source/"}

@@ -1,2 +1,11 @@
+.body {
+  width: 1100px;
+  position: relative; }
+
+.icon {
+  font-size: 30px; }
+
+.search {
+  position: absolute; }
 
 /*# sourceMappingURL=main.css.map */

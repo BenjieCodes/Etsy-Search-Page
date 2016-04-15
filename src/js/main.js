@@ -1,10 +1,6 @@
 console.log("hello world");
 
-
+import $ from 'jquery';
 import etsyItems from './etsy-items';
 
 console.log(etsyItems);
-
-etsyItems.forEach( function(result) {
-  console.log(result.results.description);
-});
