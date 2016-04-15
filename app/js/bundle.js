@@ -9860,22 +9860,30 @@ var _etsyItems = require('./etsy-items');
 
 var _etsyItems2 = _interopRequireDefault(_etsyItems);
 
+console.log("hello world");
+console.log(_etsyItems2['default']);
 // console.log(etsyItems);
 // Made a variable to focus on where to display images.
-console.log("hello world");var images = (0, _jquery2['default'])('.images');
+var images = (0, _jquery2['default'])('.images');
 // make a loop that will focus on all the object's individual traits
 _etsyItems2['default'].results.forEach(function (item) {
-  // object's images array
+  // object's images URL
   var etsyImage = item.Images[0];
   var imgUrl;
-
   if (etsyImage === undefined) {
     imgUrl = "http://placehold.it/75x75";
   } else {
     imgUrl = etsyImage.url_75x75;
   }
+  // object's item name
+  var itemName = item.title;
+  // object's shop name
+  var shop = item.Shop.shop_name;
+  // object's price
+  var price = "$" + item.price;
 
-  // Break it down to the images actual image
+  var imageArea = '\n    <div class="imageArea">\n      <img src="' + imgUrl + '">\n      <p>' + shop + '</p>\n      <p>' + price + '</p>\n    </div>\n  ';
+  images.append(imageArea);
 });
 
 // var Itemimage =
