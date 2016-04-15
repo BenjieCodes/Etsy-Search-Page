@@ -1,4 +1,4 @@
-var etsyItems = [
+var etsyItems =
 
 {
 "count": 32202,
@@ -4655,7 +4655,5 @@ var etsyItems = [
 "next_page": 2
 }
 }
-
-];
 
 export default etsyItems;
