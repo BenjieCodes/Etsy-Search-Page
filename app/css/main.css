@@ -39,6 +39,12 @@ nav {
   width: 900px;
   overflow: hidden; }
 
+.images {
+  clear: both; }
+
+.imageArea {
+  float: left; }
+
 .results {
   float: left; }
 
