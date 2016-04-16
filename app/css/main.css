@@ -42,6 +42,15 @@ nav {
 .images {
   clear: both; }
 
+.imageArea img {
+  width: 207px; }
+
+.itemName {
+  width: 250px;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: ellipsis; }
+
 .imageArea {
   float: left; }
 

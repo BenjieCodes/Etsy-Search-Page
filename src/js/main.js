@@ -27,8 +27,9 @@ etsyItems.results.forEach(function (item){
   var imageArea = `
     <div class="imageArea">
       <img src="${imgUrl}">
-      <p>${shop}</p>
-      <p>${price}</p>
+      <p class="itemName">${itemName}</p>
+      <p class="shop">${shop}</p>
+      <p class="price">${price}</p>
     </div>
   `;
   images.append(imageArea);

@@ -9882,7 +9882,7 @@ _etsyItems2['default'].results.forEach(function (item) {
   // object's price
   var price = "$" + item.price;
 
-  var imageArea = '\n    <div class="imageArea">\n      <img src="' + imgUrl + '">\n      <p>' + shop + '</p>\n      <p>' + price + '</p>\n    </div>\n  ';
+  var imageArea = '\n    <div class="imageArea">\n      <img src="' + imgUrl + '">\n      <p class="itemName">' + itemName + '</p>\n      <p class="shop">' + shop + '</p>\n      <p class="price">' + price + '</p>\n    </div>\n  ';
   images.append(imageArea);
 });
 
