@@ -2,9 +2,9 @@ $logoFont: 'Droid Serif', serif;
 $etsyFont: 'Lato', sans-serif;
 $etsyBlue: #34A8C4;
 $etsyGray: #8B888B;
-.body {
-  width: 1100px;
-
+$backgroundColor: #F5F5F1;
+body {
+  background: $backgroundColor;
 }
 
 header {
@@ -13,6 +13,10 @@ header {
   font-family: $etsyFont;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
 .logo {
   font-family: $logoFont;
@@ -115,8 +119,8 @@ header {
 nav {
   padding: 10px;
   font-family: $etsyFont;
-  border-top: 1px solid #E1E3DF;
-  border-bottom: 1px solid #E1E3DF;
+  border-top: 1px solid $etsyGray;
+  border-bottom: 1px solid $etsyGray;
   text-align: center;
 }
 
@@ -130,10 +134,36 @@ nav span {
 .sidebarcontainer {
   font-family: $etsyFont;
   padding-left: 159px;
-  padding-top: 30px;
+  padding-top: 22px;
   float: left;
   list-style-type: none;
 }
+
+.categories {
+  border: 1px solid #E1E3DF;
+  background: white;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.sideheader {
+  margin: 0;
+  padding: 10px;
+}
+
+.sidelist {
+  padding-left: 30px;
+  font-size: 14px;
+}
+
+.sidelist li {
+  padding: 2px;
+}
+
+
 
 .results {
 
@@ -144,6 +174,7 @@ nav span {
 }
 
 .container {
+  background: $backgroundColor;
   width: 900px;
   overflow: hidden;
 
