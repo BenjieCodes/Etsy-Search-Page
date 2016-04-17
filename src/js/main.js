@@ -23,15 +23,23 @@ etsyItems.results.forEach(function (item){
   var shop = item.Shop.shop_name;
   // object's price
   var price = "$" + item.price
+  //object's url
+  var itemUrl = item.url
 
   var imageArea = `
     <div class="imageArea">
-      <img src="${imgUrl}">
+      <a href="${itemUrl}">
+      <img src="${imgUrl}"
+      <br><b/r>
       <p class="itemName">${itemName}</p>
       <p class="shop">${shop}</p>
       <p class="price">${price}</p>
+      </a>
     </div>
   `;
+
+
+
   images.append(imageArea);
 });
 

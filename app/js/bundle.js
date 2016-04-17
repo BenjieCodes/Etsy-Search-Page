@@ -9881,8 +9881,11 @@ _etsyItems2['default'].results.forEach(function (item) {
   var shop = item.Shop.shop_name;
   // object's price
   var price = "$" + item.price;
+  //object's url
+  var itemUrl = item.url;
 
-  var imageArea = '\n    <div class="imageArea">\n      <img src="' + imgUrl + '">\n      <p class="itemName">' + itemName + '</p>\n      <p class="shop">' + shop + '</p>\n      <p class="price">' + price + '</p>\n    </div>\n  ';
+  var imageArea = '\n    <div class="imageArea">\n      <a href="' + itemUrl + '">\n      <img src="' + imgUrl + '"\n      <br><b/r>\n      <p class="itemName">' + itemName + '</p>\n      <p class="shop">' + shop + '</p>\n      <p class="price">' + price + '</p>\n      </a>\n    </div>\n  ';
+
   images.append(imageArea);
 });
 

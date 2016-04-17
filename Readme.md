@@ -1,6 +1,9 @@
 # Project Description
 
-This is a basic template for starting projects.
+- Have a deep understanding of layout
+- Understand jQuery DOM Manipulation
+- Demonstrate strong ability to navigate through a large block of JSON data
+- Understand and be able to use JavaScript templates
 
 ## Deployment
 
