@@ -3,11 +3,13 @@ $etsyFont: 'Lato', sans-serif;
 $etsyBlue: #34A8C4;
 $etsyGray: #8B888B;
 $backgroundColor: #F5F5F1;
+$fontSize: 14px;
 body {
   background: $backgroundColor;
 }
 
 header {
+  background: white;
   padding-left: 130px;
   overflow: hidden;
   font-family: $etsyFont;
@@ -117,6 +119,7 @@ a {
 
 
 nav {
+  background: white;
   padding: 10px;
   font-family: $etsyFont;
   border-top: 1px solid $etsyGray;
@@ -134,7 +137,7 @@ nav span {
 .sidebarcontainer {
   font-family: $etsyFont;
   padding-left: 159px;
-  padding-top: 22px;
+  padding-top: 10px;
   float: left;
   list-style-type: none;
 }
@@ -146,7 +149,7 @@ nav span {
 
 h4 {
   font-weight: bold;
-  font-size: 14px;
+  font-size: $fontSize;
 }
 
 .sideheader {
@@ -156,56 +159,79 @@ h4 {
 
 .sidelist {
   padding-left: 30px;
-  font-size: 14px;
+  font-size: $fontSize;
 }
 
 .sidelist li {
   padding: 2px;
+  color: $etsyBlue;
 }
 
-
-
-.results {
-
-}
-
-.sidelist {
-  color: #34A8C4;
-}
 
 .container {
   background: $backgroundColor;
-  width: 900px;
   overflow: hidden;
+}
 
+.results {
+  float: left;
+  font-style: $etsyFont;
+  font-size: $fontSize;
+}
+
+.results .one {
+  color: $etsyBlue;
+}
+
+.results .two {
+  font-weight: bold;
+}
+
+.relevancy {
+  float: right;
+  font-style: $etsyFont;
+  font-size: $fontSize;
+}
+
+.relevancy .two{
+  color: $etsyBlue;
 }
 
 .images  {
   clear: both;
+  width: 900px;
 }
 
 .imageArea {
-  width: 250px;
+  padding: 10px 10px;
+  font-style: $logoFont;
+  font-size: 12px;
+  font-weight: 100;
+  width: 207px;
   white-space: nowrap;
   overflow: auto;
   text-overflow: ellipsis;
+  background: white;
+  float: left;
 }
 
 .imageArea img {
-  width: 207px
-}
-
-
-.imageArea {
+  width: 207px;
   float: left;
 }
 
-.results {
+.imageArea .itemName {
   float: left;
 }
-.relevancy {
+
+.imageArea .shop {
+  float: left;
+}
+
+.imageArea .price {
   float: right;
 }
+
 
 footer {
   float: left;

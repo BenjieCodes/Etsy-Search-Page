@@ -2,6 +2,7 @@ body {
   background: #F5F5F1; }
 
 header {
+  background: white;
   padding-left: 130px;
   overflow: hidden;
   font-family: "Lato", sans-serif; }
@@ -87,6 +88,7 @@ a {
   color: #8B888B; }
 
 nav {
+  background: white;
   padding: 10px;
   font-family: "Lato", sans-serif;
   border-top: 1px solid #8B888B;
@@ -102,7 +104,7 @@ nav span {
 .sidebarcontainer {
   font-family: "Lato", sans-serif;
   padding-left: 159px;
-  padding-top: 22px;
+  padding-top: 10px;
   float: left;
   list-style-type: none; }
 
@@ -123,35 +125,59 @@ h4 {
   font-size: 14px; }
 
 .sidelist li {
-  padding: 2px; }
-
-.sidelist {
+  padding: 2px;
   color: #34A8C4; }
 
 .container {
   background: #F5F5F1;
-  width: 900px;
   overflow: hidden; }
 
-.images {
-  clear: both; }
-
-.imageArea {
-  width: 250px;
-  white-space: nowrap;
-  overflow: auto;
-  text-overflow: ellipsis; }
-
-.imageArea img {
-  width: 207px; }
-
-.imageArea {
-  float: left; }
-
 .results {
-  float: left; }
+  float: left;
+  font-style: "Lato", sans-serif;
+  font-size: 14px; }
+
+.results .one {
+  color: #34A8C4; }
+
+.results .two {
+  font-weight: bold; }
 
 .relevancy {
+  float: right;
+  font-style: "Lato", sans-serif;
+  font-size: 14px; }
+
+.relevancy .two {
+  color: #34A8C4; }
+
+.images {
+  clear: both;
+  width: 900px; }
+
+.imageArea {
+  padding: 10px 10px;
+  font-style: "Droid Serif", serif;
+  font-size: 12px;
+  font-weight: 100;
+  width: 207px;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow: ellipsis;
+  background: white;
+  float: left; }
+
+.imageArea img {
+  width: 207px;
+  float: left; }
+
+.imageArea .itemName {
+  float: left; }
+
+.imageArea .shop {
+  float: left; }
+
+.imageArea .price {
   float: right; }
 
 footer {
