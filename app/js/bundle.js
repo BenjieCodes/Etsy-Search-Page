@@ -9879,19 +9879,30 @@ _etsyItems2['default'].results.forEach(function (item) {
   var itemName = item.title;
   // object's shop name
   var shop = item.Shop.shop_name;
+  // shop's url
+  var shopUrl = item.Shop.url;
   // object's price
   var price = "$" + item.price;
   //object's url
   var itemUrl = item.url;
 
-  var imageArea = '\n    <div class="imageArea">\n      <a href="' + itemUrl + '">\n      <img src="' + imgUrl + '"\n      <br><b/r>\n      <p class="itemName">' + itemName + '</p>\n      <p class="shop">' + shop + '</p>\n      <p class="price">' + price + '</p>\n      </a>\n    </div>\n  ';
+  var imageArea = '\n    <div class="imageArea">\n      <a href="' + itemUrl + '">\n        <img src="' + imgUrl + '"></img>\n        <p class="itemName">' + itemName + '</p>\n      </a>\n      <a href="' + shopUrl + '">\n        <p class="shop">' + shop + '</p>\n      </a>\n        <p class="price">' + price + '</p>\n\n    </div>\n  ';
 
   images.append(imageArea);
 });
 
-// var Itemimage =
-
-// http://placehold.it/
+// var hovertarget = $('.price');
+//
+// hovertarget.hover(function(){
+//
+//   var hoverimages =
+//   `<div class="hoverimages">
+//   <img src="images/heart.png">
+//   <img src="images/hamburger.png">
+//   </div>`
+//
+//   hovertarget.toggleClass(hoverimages);
+// })
 
 },{"./etsy-items":2,"jquery":1}]},{},[3])
 

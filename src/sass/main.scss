@@ -2,6 +2,7 @@ $logoFont: 'Droid Serif', serif;
 $etsyFont: 'Lato', sans-serif;
 $etsyBlue: #34A8C4;
 $etsyGray: #8B888B;
+$etsyGreen: #78C042;
 $backgroundColor: #F5F5F1;
 $fontSize: 14px;
 body {
@@ -145,6 +146,7 @@ nav span {
 .categories {
   border: 1px solid #E1E3DF;
   background: white;
+  padding-right: 45px;
 }
 
 h4 {
@@ -171,6 +173,8 @@ h4 {
 .container {
   background: $backgroundColor;
   overflow: hidden;
+  padding-top: 30px;
+  padding-left: 20px;
 }
 
 .results {
@@ -191,6 +195,7 @@ h4 {
   float: right;
   font-style: $etsyFont;
   font-size: $fontSize;
+  padding-right: 160px;
 }
 
 .relevancy .two{
@@ -200,19 +205,18 @@ h4 {
 .images  {
   clear: both;
   width: 900px;
+  overflow: hidden;
 }
 
 .imageArea {
-  padding: 10px 10px;
-  font-style: $logoFont;
   font-size: 12px;
-  font-weight: 100;
   width: 207px;
-  white-space: nowrap;
-  overflow: auto;
-  text-overflow: ellipsis;
-  background: white;
   float: left;
+  background: white;
+  border: 1px solid #E1E3DF;
+  margin-left: 20px;
+  margin-top: 20px
+
 }
 
 .imageArea img {
@@ -221,15 +225,42 @@ h4 {
 }
 
 .imageArea .itemName {
+  width: 191px;
   float: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0px;
+  padding-top: 10px;
+  padding-right: 8px;
+  padding-left: 8px;
+
 }
 
 .imageArea .shop {
   float: left;
+  color: $etsyGray;
+  margin: 0;
+  padding-left: 8px;
+  padding-top: 3px;
+  padding-bottom: 6px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .imageArea .price {
   float: right;
+  color: $etsyGreen;
+  margin: 0;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 6px;
+}
+
+.hoverimages {
+
 }
 
 
